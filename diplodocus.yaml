@@ -1,0 +1,16 @@
+"sourceDir": "docs"
+"siteName": "No one knows unknowns"
+"lang": "jp"
+"favicon": "https://twemoji.maxcdn.com/v/latest/72x72/1f643.png"
+"navLinks":
+  - "title": "Top"
+    "path": "/"
+  - "title": "Blog"
+    "path": "entry"
+  - "title": "Links"
+    "items":
+      - "path": "https://twitter.com/r4wxii"
+        "title": "Twitter"
+      - "path": "https://github.com/r4wxii"
+        "title": "GitHub"
+"tocLevels": []
