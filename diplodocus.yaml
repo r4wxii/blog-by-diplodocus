@@ -13,4 +13,7 @@ navLinks:
         title: Twitter
       - path: https://github.com/r4wxii
         title: GitHub
+listPages:
+  - title: 記事一覧
+    path: entry
 tocLevels: []
