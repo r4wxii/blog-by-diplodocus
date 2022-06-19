@@ -40,7 +40,7 @@ import { MyFrontMatter } from "./types/MyFrontMatter.d.ts";
   ).slice(0, 5).forEach((post) => {
     feed.addItem({
       title: post.frontMatter.title,
-      link: `htpps://blog.r4wxii.com/entry/${post.fileName}`,
+      link: `https://blog.r4wxii.com/entry/${post.fileName}`,
       date: post.frontMatter.date,
       image: post.frontMatter.image,
       description: post.frontMatter.description,
