@@ -8,7 +8,7 @@ navLinks:
   - title: Blog
     path: entry
   - title: RSS
-    path: rss.xml
+    path: feed.xml
   - title: Links
     items:
       - path: https://twitter.com/r4wxii

@@ -48,7 +48,7 @@ import { MyFrontMatter } from "./types/MyFrontMatter.d.ts";
     });
   });
 
-  await Deno.writeTextFile("./docs/rss.xml", feed.rss2());
+  await Deno.writeTextFile("./docs/feed.xml", feed.rss2());
 }
 
 function isFrontMatter(arg: unknown): arg is MyFrontMatter {
