@@ -13,7 +13,7 @@ jobs:
       - uses: denoland/setup-deno@v1
         with:
           deno-version: "1.22.0"
-      - run: deno run --allow-read --allow-write --allow-env ./rss.ts
+      - run: deno task rss
       - uses: denoland/deployctl@v1
         with:
           project: ${{ secrets.PROJECT_NAME }}
