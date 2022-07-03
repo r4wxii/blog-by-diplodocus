@@ -1,4 +1,4 @@
-import { parse } from "https://deno.land/x/frontmatter@v0.1.4/mod.ts";
+import { extract } from "https://deno.land/std@0.146.0/encoding/front_matter.ts";
 import { Feed } from "https://esm.sh/feed@4.2.2";
 import { Post } from "./types/Post.d.ts";
 import { MyFrontMatter } from "./types/MyFrontMatter.d.ts";
@@ -23,11 +23,11 @@ import { MyFrontMatter } from "./types/MyFrontMatter.d.ts";
   for await (const post of posts) {
     const content = await Deno.readFile(`./docs/entry/${post.name}`);
     const text = new TextDecoder().decode(content);
-    const parsed = parse(text);
-    if (isFrontMatter(parsed.data)) {
+    const { attrs, body, frontMatter } = extract(text);
+    if (isFrontMatter(attrs)) {
       const myfrontMatter = {
-        ...parsed.data,
-        content: parsed.content.split(/\n/)[0],
+        ...attrs,
+        content:body.split(/\n/)[0],
       };
       parsedPosts.push({
         fileName: post.name.replace(".md", ""),
