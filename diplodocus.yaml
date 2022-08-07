@@ -19,3 +19,4 @@ listPages:
   - title: 記事一覧
     path: entry
 tocLevels: []
+bottomHead: <link rel="alternate" type="application/rss+xml" href="/feed.xml">
